@@ -2,3 +2,16 @@
 #nimi = input("Mikä on sinun nimesi? ")
 #print("Terve, " + nimi + "!")
 
+#import math
+#säde = float(input("Anna ympyrän säde: "))
+#pinta = math.pi * math.pow(säde, 2)
+#print (f"Pinta-ala on: {pinta:6.2f}")
+
+#leveys   = float(input("Anna leveys: "))
+#korkeus  = float(input("Anna korkeus: "))
+#pinta    = (leveys * korkeus)
+#piiri    = (leveys+leveys+korkeus+korkeus)
+#print("Pinta ala on: " + str(pinta))
+#print("Piiri on: " + str(piiri))
+
+
