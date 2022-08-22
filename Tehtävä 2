@@ -1,0 +1,4 @@
+#tehtävä 2.1
+#nimi = input("Mikä on sinun nimesi? ")
+#print("Terve, " + nimi + "!")
+
