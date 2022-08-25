@@ -29,9 +29,9 @@
 
 #5
 #import math
-#luotibase = int(input("Anna luoti määrä: "))
-#naulabase = int(input("Anna naula määrä: "))
-#leiviskäbase = int(input("Anna leiviskö määrä: "))
+#luotibase = float(input("Anna luoti määrä: "))
+#naulabase = float(input("Anna naula määrä: "))
+#leiviskäbase = float(input("Anna leiviskö määrä: "))
 #luoti = (13.3)
 #naula = (luoti * 32)
 #leiviskä = (naula * 20)
@@ -41,7 +41,7 @@
 #grammashort = float(grammaedit)
 #vastausg = grammashort * 1000
 #print ("Massa nykymittojen mukaan: ")
-#print (math.floor(vastauskg), ("kilogrammaa"),int(vastausg), ("grammaa"))
+#print (math.floor(vastauskg), ("kilogrammaa"),round(vastausg,2), ("grammaa"))
 
 #6
 #import random
