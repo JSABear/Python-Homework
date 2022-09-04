@@ -56,4 +56,4 @@
 #        print("Pääsy evätty")
 #        break
 
-#6
+#6 Ei tehty
