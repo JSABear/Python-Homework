@@ -6,21 +6,44 @@
 #    print ("Kala on tarpeeksi pitkä.")
 
 #2
-#hytti= input("Anna hytin luokka: ")
-#if hytti == LUX:
+#hytti = input("Anna hytin luokka: ")
+#if hytti == "LUX":
 #    print ("LUX on parvekkeellinen hytti yläkannella.")
-#if hytti == A:
+#elif hytti == "A":
 #    print ("A on ikkunallinen hytti autokannen yläpuolella.")
-#if hytti == B:
+#elif hytti == "B":
 #    print ("B on ikkunaton hytti autokannen yläpuolella.")
-#if hytti == C:
+#elif hytti == "C":
 #    print ("C on ikkunaton hytti autokannen alapuolella.")
 #else:
 #    print ("Virheellinen hyttiluokka.")
 
 #3
-#nainen=1
 #sukupuoli = input("Anna sukupuolesi: ")
-#nainen=1
-#if sukupuoli ==1:
-#    Print ("Olet nainen.")
+#hemo = int(input("Anna hemoglobiinniarvo: "))
+#if sukupuoli =="nainen":
+#    if hemo > 175:
+#        print ("Hemoglobiiniarvo on korkea.")
+#    if hemo < 117:
+#        print("Hemoglobiiniarvo on matala.")
+#    else:
+#        print("Hemoglobiiniarvo on normaali.")
+#if sukupuoli =="mies":
+#    if hemo > 195:
+#        print ("Hemoglobiiniarvo on korkea.")
+#    if hemo < 134:
+#        print("Hemoglobiiniarvo on matala.")
+#    else:
+#        print("Hemoglobiiniarvo on normaali.")
+
+#4.
+#vuosi = int(input("Anna vuosiluku: "))
+#if vuosi%100 ==0 and vuosi%400 ==0:
+#    print("Vuosi on karkausvuosi.")
+#elif vuosi % 4 == 0 and vuosi % 100 != 0:
+#    print("Vuosi on karkausvuosi.")
+#else:
+#    print("Vuosi ei ole karkausvuosi.")
+
+
+
