@@ -5,7 +5,7 @@ def pinta_ala(halkaisia):
     return p_ala
 
 def yksikkö_hinta(pinta_ala, hinta):
-    y_hinta = pinta_ala / hinta
+    y_hinta = hinta / pinta_ala
     return y_hinta
 
 hinta1 = float(input("Anna pizzan 1 hinta: "))
@@ -24,7 +24,7 @@ hintap_ala1 = yksikkö_hinta(pizzap_ala1,hinta1)
 
 hintap_ala2 = yksikkö_hinta(pizzap_ala2,hinta2)
 
-if hintap_ala1 > hintap_ala2:
+if hintap_ala1 < hintap_ala2:
     print ("Pizza 1 on parempi vastine rahalle.")
 
 else:
