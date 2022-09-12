@@ -1,5 +1,5 @@
 #2
-nimet = []
+nimet = set()
 ohjelmaPäällä = 1
 while ohjelmaPäällä==1 :
     syöttö = (input("Anna nimi: "))
@@ -9,8 +9,8 @@ while ohjelmaPäällä==1 :
         print(nimet)
         ohjelmaPäällä = 0
     else:
-        nimet.append(syöttö)
+        nimet.add(syöttö)
         print("uusi nimi")
 else:
-    ohjelmaPäällä =0
+    ohjelmaPäällä = 0
 
