@@ -13,7 +13,7 @@ yhteys = mysql.connector.connect(
 #määritetään kysely
 icao = input("Anna ICAO koodi: ")
 sql = "SELECT name, municipality FROM airport WHERE ident = '" + icao + "'"
-print(sql)
+
 
 #suoritetaan kysely
 kursori = yhteys.cursor()
