@@ -4,11 +4,18 @@ vuodenajat = ("talvi","talvi","talvi",
               "kesä","kesä","kesä",
               "syksy","syksy","syksy")
 
+
+
 syöttö = int(input("Anna kuukausi: "))
+
+
 if syöttö > 11:
     muutos = syöttö-12
+elif syöttö < 1:
+    exit()
 elif syöttö < 12:
     muutos = syöttö
+
 
 vastaus = vuodenajat[muutos]
 
@@ -24,3 +31,4 @@ elif vastaus in vuodenajat[6:9]:
 
 elif vastaus in vuodenajat[9:12]:
     print("On syksy")
+
