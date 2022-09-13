@@ -1,8 +1,8 @@
 
-kuukaudet = ("joulkuu","tammikuu","helmikuu","maaliskuu","huhtikuu",
-              "toukokuu","kesäkuu","heinäkuu","elokuu",
-             "syyskuu","lokakuu","marraskuu")
-
+vuodenajat = ("talvi","talvi","talvi",
+              "kevät","kevät","kevät",
+              "kesä","kesä","kesä",
+              "syksy","syksy","syksy")
 
 syöttö = int(input("Anna kuukausi: "))
 if syöttö > 11:
@@ -10,17 +10,17 @@ if syöttö > 11:
 elif syöttö < 12:
     muutos = syöttö
 
-vastaus = kuukaudet[muutos]
+vastaus = vuodenajat[muutos]
 
 
-if vastaus in kuukaudet[0:3]:
+if vastaus in vuodenajat[0:3]:
     print("On talvi")
 
-elif vastaus in kuukaudet[3:6]:
+elif vastaus in vuodenajat[3:6]:
     print("On kevät")
 
-elif vastaus in kuukaudet[6:9]:
+elif vastaus in vuodenajat[6:9]:
     print("On kesä")
 
-elif vastaus in kuukaudet[9:12]:
+elif vastaus in vuodenajat[9:12]:
     print("On syksy")
