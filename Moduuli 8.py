@@ -12,7 +12,7 @@ yhteys = mysql.connector.connect(
 
 #määritetään kysely
 maakoodi = input("Anna 2-kirjaiminen maakoodi: ")
-sql = "SELECT name, continent FROM country WHERE iso_country = '" + maakoodi + "'"
+sql = "SELECT TYPE, COUNT(*) FROM airport WHERE iso_country = '" + maakoodi + "' GROUP BY type"
 print(sql)
 
 #suoritetaan kysely
@@ -24,4 +24,3 @@ tulos = kursori.fetchall()
 for rivi in tulos:
         print(f"{rivi[0]}, {rivi[1]}")
 
-#if kursori.rowcount > 0:

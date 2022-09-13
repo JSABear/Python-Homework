@@ -1,4 +1,6 @@
 import mysql.connector
+
+
 yhteys = mysql.connector.connect(
         host='127.0.0.1',
         port=3306,
@@ -8,12 +10,15 @@ yhteys = mysql.connector.connect(
         autocommit=True
         )
 
+
 icao = input("Anna ICAO koodi: ")
 sql = "SELECT name, municipality FROM airport WHERE ident = '" + icao + "'"
 print(sql)
 
+
 kursori = yhteys.cursor()
 kursori.execute(sql)
+
 
 tulos = kursori.fetchall()
 for rivi in tulos:
