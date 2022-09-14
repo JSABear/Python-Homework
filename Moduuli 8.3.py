@@ -62,7 +62,7 @@ tulos2 = kursori.fetchall()
 
 
 #tulostaa vastauksen
-print(puhdasnimi1,"ja",puhdasnimi2,"etäisyys on: ",round(etäisyys(tulos1,tulos2).km,2)," km")
+print(puhdasnimi1,"ja",puhdasnimi2,"välinen etäisyys on: ",round(etäisyys(tulos1,tulos2).km,2)," km")
 
 
 
