@@ -3,7 +3,7 @@ class car:
     def __init__(self, plate, top_speed):
 
         self.plate = plate
-        self.topspeed = top_speed
+        self.top_speed = top_speed
         self.speed = 0
         self.distance = 0
 
@@ -11,8 +11,8 @@ class car:
 
         if acceleration > 0:
             self.speed = self.speed + acceleration
-            if self.speed > self.topspeed:
-                self.speed = self.topspeed
+            if self.speed > self.top_speed:
+                self.speed = self.top_speed
             else:
                 return
         elif acceleration < 0:
@@ -22,7 +22,7 @@ class car:
             else:
                 return
 
-    def travel(self,hours):
+    def travel(self, hours):
         self.distance = self.speed * hours + self.distance
 
 
