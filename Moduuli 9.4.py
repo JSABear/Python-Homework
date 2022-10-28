@@ -24,8 +24,8 @@ class car:
 
     def travel(self, hours):
         self.distance = self.speed * hours + self.distance
-
-
+    def get_info(self):
+        print(f"Plate: {self.plate}, Top speed: {self.top_speed} km/h, Current Speed: {self.speed} km/h,Distance traveled: {self.distance} km")
 cars = list()
 for i in range(10):
     hp = random.randint(100, 200)
@@ -38,3 +38,5 @@ while cars[i].distance <= 10000:
             print(cars[i].plate, "Voitti!")
             break
 
+for car in cars:
+    car.get_info()
