@@ -49,9 +49,10 @@ class race:
 
 
     def race_over(self):
-        print("")
+
         for i in range(len(self.car_list)):
             if self.car_list[i].distance >= self.race_length:
+                race1.print_info()
                 print(self.car_list[i].plate, "Voitti!")
                 return True
         return False
@@ -65,8 +66,14 @@ for i in range(10):
 race1 = race("Suuri romuralli", 8000, cars)
 
 game_over = False
+hours_passed = 0
 
 while game_over == False:
     race1.hour_passes()
-    race1.print_info()
+    hours_passed += 1
+    if hours_passed == 10:
+        hours_passed = 0
+        race1.print_info()
+        print("")
     game_over = race1.race_over()
+
