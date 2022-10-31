@@ -6,7 +6,7 @@ class building:
         self.max_floor = 10
         self.num_of_elevators = num_of_elevators
         self.elevators = []
-        for i in range (self.num_of_elevators):
+        for i in range(self.num_of_elevators):
             self.elevators.append(elevator())
 
     def ride_elevator(self, target_elevator, target_floor):

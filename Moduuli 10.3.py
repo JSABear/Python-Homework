@@ -1,4 +1,4 @@
-# 10.2
+# 10.3
 
 class building:
     def __init__(self, num_of_elevators):
@@ -13,6 +13,9 @@ class building:
         self.target_elevator = target_elevator-1
         self.elevators[self.target_elevator].go_to(target_floor)
 
+    def firealarm(self):
+        for i in range(self.num_of_elevators):
+            building1.ride_elevator(i, 0)
 class elevator:
     def __init__(self,):
         self.max_floor = 10
@@ -27,8 +30,6 @@ class elevator:
         elif selected_floor < self.floor:
             while selected_floor < self.floor:
                 building1.elevators[building1.target_elevator].floor_down()
-        else:
-            print("Olet tässä kerroksessa.")
 
     def floor_up(self):
         self.floor = self.floor + 1
@@ -42,10 +43,12 @@ class elevator:
 
 building1 = building(4)
 
-building1.ride_elevator(1, 4)
+building1.ride_elevator(1, 1)
 
-building1.ride_elevator(2, 5)
+building1.ride_elevator(2, 2)
 
-building1.ride_elevator(1, 2)
+building1.ride_elevator(3, 3)
 
-building1.ride_elevator(4, 1)
+building1.ride_elevator(4, 4)
+
+building1.firealarm()
