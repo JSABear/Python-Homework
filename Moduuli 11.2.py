@@ -58,5 +58,5 @@ car2.get_info()
 car1.travel(3)
 car2.travel(3)
 
-print(f"Mittarilukema {car1.distance} km")
-print(f"Mittarilukema {car2.distance} km")
+print(f"Odometer {car1.distance} km")
+print(f"Odometer {car2.distance} km")
