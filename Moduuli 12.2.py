@@ -21,11 +21,14 @@ except requests.exceptions.RequestException as e:
 
 weather = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_key}&units=metric"
 try:
-    final_weather = requests.get(weather)
-    if final_weather.status_code == 200:
-        final = final_weather.json()
+    final_weather_info = requests.get(weather)
+    if final_weather_info.status_code == 200:
+        final = final_weather_info.json()
+        current_weather = final["weather"]
+        navigate_weather = current_weather[0]
+        final_weather = navigate_weather["description"]
         final_main = final["main"]
         final_temp = final_main["temp"]
-        print(f"{final_temp}\u00b0")
+        print(f"{final_weather}, {final_temp}\u00b0")
 except requests.exceptions.RequestException as e:
     print("Virheellinen valinta.")
