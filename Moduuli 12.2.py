@@ -1,7 +1,7 @@
 import requests
 
 
-API_key = "536025f917f606d3f38261ae0276b78c"
+API_key = ""
 lat = []
 lon = []
 
